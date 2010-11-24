@@ -1,0 +1,144 @@
+<table width="100%">
+<tr valign="bottom">
+    <td>
+        <font size=+2>Заказы на&nbsp;</font>
+        <select onchange="javascript:document.location=this.value;">
+            <!-- BEGIN date_item -->
+            <option value="{THIS_PAGE}?show_date={WEEK_D}" {DATE_SELECTED}>
+                {ORDATE} - {WEEK_D_NAME}
+            </option>
+            <!-- END date_item -->
+        </select>
+    </td>
+    <td align="right">
+        <a href="{PRINT_URL}" target="_blank">Вывести печатную форму заказов на {PRINT_DATE_STRING}</a>
+    </td>
+</tr>
+</table>
+
+<!-- BEGIN add_block-->
+<!--
+<form action='{THIS_PAGE}index.php' method=post>
+
+<input type=hidden name=a value="add">
+<input type=hidden name="show_date" value="{ORDERDATE}">
+<table>
+    <tr><td>Заказ на имя:</td><td><select class=inp name="form[IDClientUser]">{CLIENT_NAME_OPTIONS}</select></td></tr>
+    <tr><td class=inp colspan=2><input type=submit value="Добавить" class=btn></td></tr>
+</table>
+</form>
+-->
+<!-- END add_block-->
+
+<br/>
+<table>
+<form action='{THIS_PAGE}index.php' method=post>
+<!-- BEGIN oder_details -->
+<tr><td colspan=3>
+    <table>
+    <tr><td>Заказ на имя:</td><td><select class=inp name="form[IDClientUser]">{CLIENT_NAME_OPTIONS}</select></td></tr>
+    <tr><td>Номер заказа:</td><td><input name="form[OrderNum]" class=inp style="width:300px" value="{ORDERNUM}"></td></tr>
+    <tr><td>Дата заказа:</td><td><input name="form[OrderDate]" class=inp style="width:300px" value="{ORDERDATE}"></td></tr>
+    <tr><td>Состояние заказа:</td><td><select class=inp name="form[Status]">{STATUS_OPTIONS}</select></td></tr>
+    <tr><td>Сумма заказа:</td><td>
+        <input name="form[Summ]" class=inp style="width:100px" value="">
+        <input name="form[OldSumm]" class=inp style="width:100px" value="{SUMM}" disabled>
+    </td></tr>
+    </table>
+</td>
+</tr>
+<tr><td colspan=3><b>Заказ</b></td></tr>
+<!-- END oder_details -->
+
+<input type=hidden name=a value="{ACTION}"><input type=hidden name=id value={ID}>
+<tr>
+    <td></td>
+    <td></td>
+    <!-- BEGIN client_name_list -->
+    <td width=100 align="center" valign="top" cellpadding=0>
+        <a href="{URL}"><font size=+0><b>{CLIENTNAME}</b></font></a>
+    </td>
+    <!-- END client_name_list  -->
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <!-- BEGIN client_actions_list -->
+    <td width=100 align="center" valign="top">
+        <table cellpadding=0>
+            <tr><td align="center"><button type="button" style="font-size:8pt; width:90px;" onclick="javascript:window.open('{N_PRINT_URL}');">Накладная</button></td></tr>
+            <tr><td align="center"><button type="button" style="font-size:8pt; width:90px; color:red;"   onclick="javascript:document.location='{THIS_PAGE}?show_date={SHOWDATE}&a=declay_order&IDClietnComp={IDCLIENTCOMP}';">Отклонить</button></a></td></tr>
+            <tr><td align="center"><button type="button" style="font-size:8pt; width:90px; color:green;" onclick="javascript:document.location='{THIS_PAGE}?show_date={SHOWDATE}&a=accept_order&IDClietnComp={IDCLIENTCOMP}';">Принять</button></a></td></tr>
+        </table>
+    </td>
+    <!-- END client_actions_list  -->
+    <!-- BEGIN client_empty_actions -->
+    <td></td>
+    <!-- END client_empty_actions -->
+</tr>
+<tr>
+    <td valign="top"><b>Выход</b></td>
+    <td valign="top"><b>Наименование</b></td>
+    <!-- BEGIN order_status_list -->
+    <td width=100 align="center" valign="top">
+        <b><font color="{STATUS_COLOR}">{STATUS}</font></b>
+    </td>
+    <!-- END order_status_list -->
+    <td valign="top"><b>Итого</b></td>
+</tr>
+
+<tr>
+    <td colspan="{FULL_TABLE_COLS}"><hr></td>
+</tr>
+
+<!-- BEGIN main_row -->
+<!-- BEGIN header_row -->
+<tr>
+    <td colspan="2"><b>{HEADER}</b></td><td colspan="{CLIENT_NUM}">&nbsp;</td>
+</tr>
+<!-- END header_row -->
+<!-- BEGIN simple_row -->
+<tr>
+    <td>{WEIGHT}</td>
+    <td>{TITLE}</td>
+    <!-- BEGIN client_number_view -->
+    <td align="center">
+        <input type="hidden" name="form[OrderListL][{ID_MEAL}][price]" value="{PRICE}">
+        <input disabled name="form[OrderListL][{ID_MEAL}][main]" value="{NUM}" style="width:50px; color:black; font-weight:bold; background-color:{CLIENT_NUMBER_BGCOLOR}; text-align:center;">
+    </td>
+    <!-- END client_number_view -->
+    <!-- BEGIN client_number_edit -->
+    <td align="center">
+        <input type="hidden" name="form[OrderListL][{ID_MEAL}][price]" value="{PRICE}">
+        <input name="form[OrderListL][{ID_MEAL}][main]" value="{NUM}" style="width:50px;">
+    </td>
+    <!-- END client_number_edit -->
+    <td align="center">{SUMM}</td>
+</tr>
+<!-- END simple_row -->
+<!-- END main_row -->
+
+<tr>
+    <td colspan="{FULL_TABLE_COLS}"><hr></td>
+</tr>
+
+<tr>
+    <td colspan="2"><b>Комментарии к заказу</b></td>
+    <!-- BEGIN comments_list -->
+    <td width=100 align="left" valign="top">
+        <br>
+        {COMMENTS}
+    </td>
+    <!-- END comments_list  -->
+</tr>
+
+
+    <tr><td colspan=2>&nbsp;
+    <!-- BEGIN button -->
+        <input type=submit value="{BTN_CAPTION}" class=btn>
+    <!-- END button -->
+    </td><td colspan="{CLIENT_NUM}"></td></tr>
+</form></table>
+<br/>
+
+{LIST}

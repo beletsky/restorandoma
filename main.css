@@ -1,0 +1,311 @@
+﻿/* Таблица стилей общая для всех страниц */
+
+* {-moz-box-sizing: border-box;}
+
+/* Тело страницы */
+BODY { margin: 0px; padding:0px }
+
+/* Блоки страницы*/
+/*
+DIV {
+    position:absolute;
+    left: 139px;
+    top: 160px;
+}
+*/
+
+/* Штора */
+.bg_blind { background: url(/images/blind.gif) no-repeat }
+
+/* Тарелка */
+.bg_plate { background: url(/images/plate.gif) no-repeat 100% 270px; vertical-align:top }
+
+/* Фото к разделу О_НАС */
+.bg_about { background: url(/images/about_photo.gif) no-repeat }
+
+/* Рука */
+#hand { float: left; left:0px; top:160px; height: 137px; width: 340px; background: url(/images/hand.gif) no-repeat }
+#hand_kr { float: left; left:0px; top:160px; height: 137px; width: 340px; background: url(/images/hand_kr.gif) no-repeat }
+
+/* Контакты */
+#contacts {position:absolute; left:27px; top:27px; height: 26px; width: 48px; padding: 0px;  z-index: 4 }
+
+div#contacts table { width: 50px; height: 25px }
+div#contacts table tr { text-align: center }
+body#main td.home, body#cont td.mail { background: url(/images/round_for_ico.gif) no-repeat } 
+ 
+td.mail img, td.home img { width: 11px; height:10px }
+td.mail img { margin-bottom: -1px } 
+
+/* td.home img { margin-bottom: -1px }  */
+img.home, img.mail { width: 12px; height: 10px; margin-top: 6px }
+img.home { margin-left: 6px; }
+img.mail { margin-left: 16px; }
+
+/* Верхнее меню */
+.top_mnu, top_mnu_inact { font-family: Verdana; font-size: 11px; text-align: center }
+.top_mnu, .top_mnu a { color: #790000}
+.top_mnu_inact { text-decoration:none; color: #B70000}
+.top_mnu a:hover { text-decoration:none }
+.top_mnu img { width: 100px; height: 83px ; margin-left: 15px; margin-right: 15px;  margin-top: 20px; border: none }
+.top_mnu img#spaser { width: 92px; height: 85px }
+img#ban { width: 200px; height: 77px ; margin-right: 35px; }
+.top_mnu img#ban { width: 200px; height: 77px }
+#tbl_mnu { position: absolute; z-index: 2 }
+
+/* Левое меню */
+.left_mnu { font-family: Verdana; font-size: 11px; text-align: left; color: #790000 }
+A.left_mnu { color: #790000;   text-decoration:underline}
+A.left_mnu:hover{ TEXT-DECORATION: none }
+
+.adr_real A { color: #790000;   text-decoration:underline}
+.adr_real A.hover{ TEXT-DECORATION: none }
+/* Активное меню */
+.active_mnu { font-family: Verdana; font-size: 11px; text-align: left; color: #B70000; }
+
+/* Меню  спейсер*/
+.spr_mnu { font-family: Verdana; font-size: 11px; text-align: left; color: #E8BF9F }
+
+/* Ячейка слева от текста с рукой */
+#tbl_main { position: absolute; left: 0px; top: 120px; width: 100% }
+#left_hand img { width: 340px; height: 137px;  }
+
+/* Главный заголовок */
+.main_header { margin-top: 0; padding-top: 0; font-family: Arial; font-size: 23px; font-weight: normal; color: #7C1C00; }
+
+/* Подзаголовок */
+.main_header_2 { font-family: Arial; font-size: 18px; color: #7C1C00 }
+
+/* Текст */
+.main_frame { padding-left: 25px }
+.main_txt { position:relative; top:0; bottom:0; left:0; right:0; font-family: Arial; font-size: 13px; color: #522212} 
+.main_txt_bold { font-family: Arial; font-size: 13px; color: #522212 ; margin-top: 0px; font-weight: bold  } 
+
+/* Специфика  ресторанных меню */
+.rest_menu_title { font-family: Arial; font-size: 13px; color: #845532 ; margin-top: 0px; font-weight: bold  ; padding-top: 10px; padding-bottom: 5px;} 
+.rest_menu_title_2 { font-family: Arial; font-size: 13px; color: #522212 ; margin-top: 0px; font-weight: bold  ; padding-top: 10px; padding-bottom: 5px;} 
+.rest_menu_title_3 { font-family: Arial; font-size: 13px; color: #845532 ;  padding-left: 30px;  margin-top: 0px; font-weight: bold  ; padding-top: 10px; padding-bottom: 5px;} 
+.rest_menu_position { font-family: Arial; font-size: 13px; color: #522212; padding-left: 30px;  padding-right: 10px;  padding-top: 5px; padding-bottom: 5px;} 
+.rest_menu_price { font-family: Arial; font-size: 13px; text-align: right; color: #522212; padding--left:: 30px;  padding-top: 5px; padding-bottom: 5px;} 
+
+/* Текст-ссылки */
+.main_txt_mark { color: #B70000; font-family: Arial; font-size: 13px  }
+A.main_txt_mark { TEXT-DECORATION: none }
+A.main_txt_mark:hover{ TEXT-DECORATION: underline  }
+
+/* Текст-ссылки _2*/
+.main_txt_mark_2 { color: #7C1C00; font-family: Arial; font-size: 13px  }
+A.main_txt_mark_2 { TEXT-DECORATION: underline }
+A.main_txt_mark_2:hover{ TEXT-DECORATION:  none }
+
+/* Линия */
+.line {height: 2px; background-color: #E8BF9F}
+
+/* Адрес _1*/
+.adr_txt { font-family: Verdana; color: #522212; font-size: 12px; font-weight: bold }
+
+/* Адрес _2*/
+.adr_real { font-family: Verdana; color: #522212; font-size: 11px ;  padding-left: 15px; }
+
+/* arttech*/
+
+.art { font-family: Verdana; font-size: 11px; text-align: left; color: #790000; padding-top: 10px; padding-right: 35px;}
+A.art { color: #790000;   text-decoration:none;  padding-top: 10px; padding-right: 35px;}
+A.art:hover{ TEXT-DECORATION: underline ;  padding-top: 10px; padding-right: 35px;}
+
+/* Копирайт */
+.copyright {font-family: Verdana; font-size: 11px; text-align: left; color: #522212; }
+A.copyright {color: #B70000; text-decoration:none;  }
+A.copyright:hover {text-decoration:underline }
+
+/* Шведский _1*/
+.sw_bd{font-family: Verdana; font-size: 11px; text-align: left;  font-weight: bold }
+/* Шведский _2*/
+.sw_lt {font-family: Verdana; font-size: 11px; text-align: left;  }
+/* Шведский _3*/
+.sw_ot {padding-left: 0px;  padding-right: 5px; }
+
+/* Каталог ссылок */
+.catalog_down { font-family: Verdana; font-size: 11px; text-align: left; color: #790000 }
+
+
+/*Сетка_1*/
+.rules_1 { padding-top: 25px;  padding-bottom: 30px;  padding-right: 35px; }
+
+/*Сетка_2*/
+.rules_2 {padding-left: 172px; padding-bottom: 20px;  }
+
+/*Сетка_3*/
+.rules_3 {padding-left: 172px;  }
+
+/* Отбивка для галереи */
+.img_2 {padding-right: 40px;  }
+
+/* Копирайт _Отбивка*/
+.ot_copyright { padding:0 20px 20px 30px; position:relative; top:0; left:0 }
+
+/* Счетчик _Отбивка*/
+.ot_sh {padding-right: 35px;  padding-left: 20px; padding-bottom: 20px;  }
+
+/* Отбивка для кружков_1*/
+.ot_round { padding-top: 0px;  padding-bottom: 10px;  padding-right: 20px; }
+
+/* Отбивка для кружков_2*/
+.ot_round_2 { padding-top: 10px;  padding-bottom: 10px;  padding-right: 10px; }
+
+/* Отбивка для кружков_3*/
+.ot_round_3 { padding-top: 20px;  padding-bottom: 20px;  padding-right: 10px; }
+
+/* Отбивка для клиентов*/
+.ot_cl { padding-top: 10px;  padding-bottom:20px;  padding-right: 10px; }
+
+/* Отбивка для фоток*/
+.ot_photos{ padding-top: 4px;  padding-bottom: 4px;  padding-right: 4px;  padding-left: 4px; }
+
+/* Внешняя отбивка для фоток*/
+.ot_photos_2{ padding-bottom: 20px;  padding-right: 35px; }
+
+/* Обводка для галереи */
+.img {padding-right: 0px;  padding-left: 0px; padding-bottom: 0px;  border: solid #FDE3CB  5px;  }
+
+/* Контакты _таблица*/
+.ot_contacts {padding-left: 30px;  padding-top: 0px; padding-bottom: 20px;  }
+
+/* Контакты _таблица_Отбивка*/
+.ot_contacts {padding-left: 30px;  padding-top: 0px; padding-bottom: 20px;  }
+
+/* Sp*/
+.sp { padding-bottom: 30px;  padding-right: 20px; }
+
+/* Sp_down*/
+.sp_down { padding-top: 25px;  padding-bottom: 30px;  padding-right: 35px; }
+
+/* Sp_2*/
+.sp_2 { padding-top: 25px;  padding-bottom: 20px;  padding-right: 20px; }
+
+
+
+h1 {color:#B70000; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: normal;} 
+h2 {color:#7C1C00; font:18px Arial, Helvetica, sans-serif; margin:0 0 15px}
+h2 a {color:#7C1C00;} 
+h2 a:hover {text-decoration:none;} 
+h3 {font:15px Arial, Helvetica, sans-serif; font-weight: bold;}
+
+/* contacts header */
+.contacts_tels { background:url(/images/contact_tel.gif) 0 0 no-repeat; color:#F8E6D1; font: 15px/15px Verdana, Geneva, sans-serif; height: 139px; left: 0; padding: 65px 0 0 198px; position: absolute; top: 151px; width: 340px }
+.contacts_tels .visit_card {position:absolute; left:137px; top:0; right:0; bottom:20px;width:203px;height:119px;z-order:10;}
+.contacts_tels p { margin: 0; padding: 0 0 7px}
+
+/* calendar right */
+div.menu_calendar { background:url(/images/bg_menu_calendar.gif) 100% 5px no-repeat; height:239px; position:relative; top:0; left:0; width:224px }
+.tbl_calendar { margin:22px 0 0 14px; width:158px }
+.tbl_calendar tr { background:url(/images/bg_dots.gif) 0 100% repeat-x }
+.tbl_calendar tr.last { background:none }
+.tbl_calendar td { color:#B68F70; font:12px Arial, Helvetica, sans-serif; padding:7px 5px 5px; text-align:center }
+.tbl_calendar a { color:#522212 }
+.tbl_calendar .red { color:#B70000 }
+
+.month,
+.month_inner { position:relative; top:0; left:0 }
+.month { background:url(/images/bg_month_lt.gif) 0 0 no-repeat; float:right; padding:0 5px 0 21px; }
+.month_inner { background:url(/images/bg_month_rt.gif) 100% 0 no-repeat; color:#fff; font:11px Verdana, Geneva, sans-serif; padding:15px 19px 8px 3px; text-transform:uppercase }
+
+.arrow { background:url(/images/ico_arrow.gif) 10px 17px no-repeat; color:#522212; font:13px Verdana, Geneva, sans-serif; margin:0; padding: 12px 0 0 23px; text-transform:uppercase }
+.calendar_header { color:#790000; font:22px Verdana, Geneva, sans-serif; margin:0 0 0 23px; padding:0; text-transform:uppercase }
+
+
+/* user table */
+.user_tbl { background:url(/images/user_block_bg.gif) 0 0 repeat-y; margin-top:450px; width: 199px }
+.user_top { background:url(/images/user_block_top.gif) 0 0 no-repeat; height:3px; width: 199px }
+.user_bot { background:url(/images/user_block_bot.gif) 0 0 no-repeat; height:4px; width: 199px }
+.user_tbl td { vertical-align:top }
+.user_tbl .user_tbl_header { background:url(/images/ico_arrow.gif) 0 6px no-repeat; color:#7C1C00; font:12px Verdana, Geneva, sans-serif; margin:0 0 0 30px; padding-left: 14px; text-transform:uppercase }
+.reg_form { font: 10px Verdana, Geneva, sans-serif; margin:10px 0 10px 30px; width:138px }
+.reg_form p { margin:0; overflow: hidden; padding:0 0 0 18px }
+.reg_form label { color:#522212; font: 10px Verdana, Geneva, sans-serif; }
+.reg_txt { background:#fff; border: 1px solid #522212; color:#522212; font: 10px Verdana, Geneva, sans-serif; height:14px; margin:4px 0 7px; padding:1px 5px; width:79px }
+.btn_enter { background:url(/images/btn_enter.gif) 0 0 no-repeat; border:0; cursor:pointer; float:right; height:20px; margin:0 10px 0 0; padding:0; width:20px; }
+.reg_form a { color:#B70000 }
+.reg_form .reg { background:url(/images/ico_arrow.gif) 0 4px no-repeat; margin-top: 8px}
+.reg_form .reg a { color:#522212; font-weight:bold }
+
+.login_error { font-family:Verdana, Geneva, sans-serif; font-size:10px; font-weight:bold; color:red; padding:0 0 0 48px;}
+
+a img { border:0 }
+
+/* user menu */
+.user_menu { list-style-type: none; margin:10px 0 10px 29px; padding:0; width:120px}
+.user_menu li { background:url(/images/li01.gif) 0 5px no-repeat; color:#790000; font:bold 10px Verdana, Geneva, sans-serif; padding: 0 0 6px 10px; zoom:1; }
+.user_menu a { color:#790000 }
+.user_menu li.active { background:url(/images/li01_act.gif) 0 5px no-repeat; color:#B68F70; font-style:italic }
+.user_menu li.active a { color:#B68F70 }
+
+
+.white_panel { background:url(/images/white_pnl_bot.gif) 0 100% no-repeat #fff; margin:5px 0; padding:0; position:relative; top:0; left:0; }
+.white_panel_inner { background:url(/images/white_pnl_top.gif) 0 0 no-repeat; color:#7C1C00; font:10px Verdana, Geneva, sans-serif; margin:0; padding: 8px 10px 8px 31px; position:relative; top:0; left:0; width:158px; _width: 199px }
+.white_panel_inner p { margin:0; padding:3px 0 2px; }
+.user_name { color:#BE2626; font-weight:bold }
+
+/* authorization form */
+.contentInner {padding:0 0 0 30px; position:static; top:0; left:0; font-family: Arial; font-size: 13px; color: #522212;}
+.h1_bg {background-color:#F8E9D6; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; margin:0 0 20px; padding:10px 0 10px 63px;}
+.h1_bg h1 {background:url(/images/h1_bg.gif) 33px 8px no-repeat #F8E9D6; margin:0; padding:0; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; text-transform:uppercase}
+.header_date { float:right; color:#BE2626; font: bold 12px Arial, Helvetica, sans-serif; padding:2px 10px 0 0;}
+.frmRegistration {width:520px; font-family: Arial; font-size: 13px;}
+.frmRegistration td {padding:7px 25px 7px 0; text-align:right; vertical-align:top; font-size: 13px;}
+.frmRegistration label {color:#522212; font:12px Arial, Helvetica, sans-serif}
+.frmRegistration .red {color:#790000}
+.frmRegistration .sltTxt {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; line-height:18px; padding:0 0 0 5px; width:240px}
+.frmRegistration .inpTxt {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; line-height:18px; padding:0 5px; width:240px}
+.frmRegistration .txtArea {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; height:63px; line-height:18px; padding:0 0 0 5px; width:240px}
+.frmRegistration .tblPayment {background:url(/images/bg_reg_in.jpg) 0 0 no-repeat; height:67px; width:520px}
+.frmRegistration .tblPayment label {color:#790000; font:12px Arial, Helvetica, sans-serif}
+.frmRegistration .tdDownload {text-align:right; vertical-align:middle}
+.frmRegistration .tdBtn {text-align:left}
+.btnReady {background:url(/images/btn_ready.gif) 0 0 no-repeat; border:0; cursor:pointer; height:30px; width:88px }
+.frmData {width:520px; font-family: Arial; font-size: 13px;}
+.frmData td {padding:7px 25px 7px 0; text-align:left; vertical-align:top; font-size: 13px;}
+.frmData label {display:block; color:#522212; font:12px Arial, Helvetica, sans-serif; font-weight:bold; width:240px; text-align:right;}
+.frmMenu {width:520px; font-family: Arial; font-size: 13px;}
+.frmMenu td {padding:0px 5px 5px 0; text-align:left; vertical-align:top; font-size: 13px;}
+.frmMenu label {color:#522212; font:12px Arial, Helvetica, sans-serif}
+.frmMenu .red {color:#790000}
+.frmMenu .sltTxt {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; line-height:18px; padding:0 0 0 5px; width:240px}
+.frmMenu .inpTxt {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; line-height:18px; padding:0 5px; width:30px}
+.frmMenu .txtArea {background:#fff; border:1px solid #734532; color:#000; font:12px Arial, Helvetica, sans-serif; height:63px; line-height:18px; padding:0 0 0 5px; width:240px}
+.frmMenu .tdBtn {text-align:left}
+
+/* personal */
+.tblPersonal {background:#fff; border:0; border-collapse:collapse; width:100%; _width:99%}
+.tblPersonal th {background:#BE2626; color:#fff; font:normal 14px Arial, Helvetica, sans-serif; padding:8px 20px; text-align:center}
+    .tblPersonal th.first {background:url(/images/th_first.gif) 0 0 no-repeat #BE2626}
+    .tblPersonal th.last {background:url(/images/th_last.gif) 100% 0 no-repeat #BE2626}
+.tblPersonal tr.total {background:#F8E9D6;}
+.tblPersonal tr.total td {color:#000000; font-size:15px; font-weight:normal; font-style:Arial, Helvetica, sans-serif; padding:10px 20px}
+.tblPersonal td {color:#522212; font:14px Arial, Helvetica, sans-serif; padding:10px 20px}
+.tblPersonal td h2 { margin:0;}
+.tblPersonal td h3 { margin:0;}
+.tblPlain {margin:0;padding:0;}
+.tblPlain td {margin:0;padding:2px;}
+
+.faq p {margin:10px 10px 10px 0;}
+.faq_number {color:#B70000;font-size:26px;font-weight:bold;padding:0 15px;}
+
+/* archiv */
+.archiv_tbl {background:url(/images/bg_archiv.gif) 0 0 repeat-y; border:0; border-collapse:collapse; margin:21px 0 0; width:210px}
+.archiv_tbl th {background:url(/images/ttl_archiv.gif) 0 0 no-repeat; color:#fff; font:normal 14px Arial, Helvetica, sans-serif; height:39px; line-height:28px; text-align:center; vertical-align:top}
+.archiv_tbl th a { color:#fff; font:normal 14px Arial, Helvetica, sans-serif; line-height:28px; text-decoration:none;}
+.archiv_tbl th a:hover { text-decoration:underline;}
+.archiv_tbl ul {list-style-type:none; margin:5px 15px 15px 5px; padding:0}
+.archiv_tbl li {background:url(/images/li_archiv.gif) 0 8px no-repeat; color:#B70000; font:11px Arial, Helvetica, sans-serif; padding:3px 0 4px 10px}
+.archiv_tbl a {color:#B70000}
+.archiv_tbl li.active {background:url(/images/li_archiv_act.gif) 0 8px no-repeat; color:#B68F70}
+.archiv_tbl li.active a {color:#B68F70}
+
+/* legacy buttons */
+.u01h {background: url(/images/bg02i.gif) no-repeat bottom right; margin: 0;}
+.u01h td {text-align:center; vertical-align:middle;}
+.u01h td.u05g_1 {color: #ffffff; margin: 4px 0px 0px; padding: 0px 7px;}
+a.a01e {color: #ffffff; text-decoration: none;font-family: Arial; font-size: 13px;}
+a.a01e:link, a.a01e:visited {color: #ffffff; text-decoration: none;}
+a.a01e:active, a.a01e:hover {color: #ffffff; text-decoration: none;}

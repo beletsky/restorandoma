@@ -1,0 +1,6 @@
+<table><form action='{THIS_PAGE}index.php' method=post>
+<input type=hidden name="a" value="set_new_date">
+<tr><td valign="top">c </td><td valign="top">{FIRST_DATE}</td><td valign="top">по</td><td valign="top">{LAST_DATE}</td></tr>
+<tr><td valign="top" colspan="4"><input type="submit" value="Показать" class="btn"></td></tr>
+</form></table>
+{LIST}

@@ -1,0 +1,11 @@
+{LIST}
+</br>
+<table width="100%"><form action='{THIS_PAGE}index.php' method=post enctype="multipart/form-data">
+    <input type=hidden name=a value="{ACTION}"><input type=hidden name=id value={ID}>
+    <tr><td>Название фирмы:</td><td><input name=form[Title] value="{TITLE}" class=inp style="width:300px"></td></tr>
+    <tr><td>Сфера деятельности:</td><td><input name=form[Announce] value="{ANNOUNCE}" class=inp style="width:600px"></td></tr>
+    <tr><td>Описание фирмы:</td><td width="100%">{CONTENT}</td></tr>
+    <tr><td>URL:</td><td><input name=form[URL] value="{URL}" class=inp style="width:300px"></td></tr>
+    <tr><td>Логотип:</td><td><input type="file" name="files[Image]" style="width:300px">{IMAGE}</td></tr>
+    <tr><td colspan="2">&nbsp;<input type=submit value="{BTN_CAPTION}" class=btn></td></tr>
+</form></table>

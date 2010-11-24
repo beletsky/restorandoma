@@ -1,0 +1,47 @@
+<HTML>
+<head>
+</head>
+<body>
+<!-- BEGIN client_block -->
+<table style="page-break-after:always;"><tr><td bgcolor="black">
+<table cellspacing=1 cellpadding=1 border=0>
+<tr>
+    <td bgcolor="white" colspan="{CLIENT_NUM}" align="center"><font size=3><b>Заказ на {CUR_DATE}</b></font></td>
+</tr>
+<tr>
+    <td bgcolor="white" align="center" valign="bottom"><font size=2><b>Выход</b></font></td>
+    <td bgcolor="white" align="center" valign="bottom"><font size=2><b>Наименование</b></font></td>
+    <!-- BEGIN comp_list -->
+    <td bgcolor="white" align="center" valign="top" width="10%"><font size=2><b>{CLIENTNAME}</b><br><br>{CLIENT_ADDRESS}</font></td>
+    <!-- END comp_list  -->
+    <td bgcolor="white" align="center" valign="bottom"><font size=2><b>Итого</b></font></td>
+</tr>
+
+<!-- BEGIN main_row -->
+<!-- BEGIN header_row -->
+<tr>
+    <td colspan="{CLIENT_NUM}" bgcolor="white"><font size=2><b>{HEADER}</b></font></td>
+</tr>
+<!-- END header_row -->
+<!-- BEGIN simple_row -->
+<tr>
+    <td bgcolor="white" align="center"><font size=2>{WEIGHT}</font></td><td bgcolor="white"><font size=2>{TITLE}</font></td>
+    <!-- BEGIN client_number -->
+    <td bgcolor="white" align="center"><font size=2>{NUM}</font></td>
+    <!-- END client_number -->
+    <td bgcolor="white" align="center"><font size=2><b>{SUMM}</b></font></td>
+</tr>
+<!-- END simple_row -->
+<!-- END main_row -->
+<tr>
+    <td colspan=2 bgcolor="white" valign="top"><font size=2><b>Комментарии</b></font></td>
+    <!-- BEGIN comment_list -->
+    <td bgcolor="white" align="left" width="10%" valign="top"><font size=2>{COMMENTS}</font></td>
+    <!-- END comment_list  -->
+    <td bgcolor="white" align="center"></td>
+</tr>
+</table>
+</td></tr></table>
+<!-- END client_block -->
+</body>
+</HTML>

@@ -1,0 +1,14 @@
+<h1>Навигация</h1>
+<blockquote>
+<!-- BEGIN item --><p><a href="{PATH_TO_ROOT}{FOLDER}"><b>{NAME}</b></a><!-- END item -->
+<!-- BEGIN subitem --><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{PATH_TO_ROOT}{FOLDER}">{NAME}</a><!-- END subitem -->
+<!-- BEGIN subsubitem --><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{PATH_TO_ROOT}{FOLDER}">{NAME}</a><!-- END subsubitem -->
+</blockquote>
+
+<HR>
+<table><form action='{THIS_PAGE}index.php' method=post enctype="multipart/form-data">
+<input type=hidden name="a" value="upload_menu">
+<tr><td valign="top"><b>Загрузка меню на следующую неделю.</b></td></tr>
+<tr><td valign="top"><input type="file" name="menu_file" class="btn"></td></tr>
+<tr><td valign="top"><input type="submit" value="Загрузить" class="btn"></td></tr>
+</form></table>

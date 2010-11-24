@@ -1,0 +1,15 @@
+<table border=0 cellspacing=0 cellpadding=5 class=menu width="100%"><tr>
+<!-- BEGIN item --><th{CLS}><nobr><a href="{PATH_TO_ROOT}{FOLDER}">{NAME}</a></nobr></th><!-- END item -->
+<th><a href="{PATH_TO_ROOT}">Выход</a></th><th width="100%">&nbsp;</th>
+</tr></table>
+<!-- BEGIN sub -->
+<table border=0 cellspacing=0 cellpadding=5 class=menu2 width="100%"><tr>
+<!-- BEGIN subitem --><th{CLS}><nobr><a href="{PATH_TO_ROOT}{FOLDER}">{NAME}</a></nobr></th><!-- END subitem --><th width="100%">&nbsp;</th>
+</tr></table>
+<!-- END sub -->
+<!-- BEGIN subsub -->
+<table border=0 cellspacing=0 cellpadding=5 class=menu3 width="100%"><tr>
+<!-- BEGIN subsubitem --><th{CLS}><nobr><a href="{PATH_TO_ROOT}{FOLDER}">{NAME}</a></nobr></th><!-- END subsubitem --><th width="100%">&nbsp;</th>
+</tr></table>
+<!-- END subsub -->
+<div style="margin: 10px 10px 10px 10px;">
