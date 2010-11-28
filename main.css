@@ -248,8 +248,10 @@ a img { border:0 }
 
 /* authorization form */
 .contentInner {padding:0 0 0 30px; position:static; top:0; left:0; font-family: Arial; font-size: 13px; color: #522212;}
-.h1_bg {background-color:#F8E9D6; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; margin:0 0 20px; padding:10px 0 10px 63px;}
-.h1_bg h1 {background:url(/images/h1_bg.gif) 33px 8px no-repeat #F8E9D6; margin:0; padding:0; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; text-transform:uppercase}
+/*.h1_bg {background-color:#F8E9D6; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; margin:0 0 20px; padding:10px 0 10px 63px;}*/
+.h1_bg {background:url(/images/h1_bg.gif) 33px 8px no-repeat #F8E9D6; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; margin:0 0 20px; padding:10px 0 10px 63px; position:relative; top:0; left:0;}
+/*.h1_bg h1 {background:url(/images/h1_bg.gif) 33px 8px no-repeat #F8E9D6; margin:0; padding:0; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; text-transform:uppercase}*/
+.h1_bg h1 {margin:0; padding:0; color:#BE2626; font: bold 14px Arial, Helvetica, sans-serif; text-transform:uppercase}
 .header_date { float:right; color:#BE2626; font: bold 12px Arial, Helvetica, sans-serif; padding:2px 10px 0 0;}
 .frmRegistration {width:520px; font-family: Arial; font-size: 13px;}
 .frmRegistration td {padding:7px 25px 7px 0; text-align:right; vertical-align:top; font-size: 13px;}

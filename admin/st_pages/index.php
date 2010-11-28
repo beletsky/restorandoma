@@ -126,6 +126,7 @@ function GetForm($form, $action) {
     $tpl->set_var('COMENT', isset($form['Coment']) ? htmlspecialchars($form['Coment']) : '');
     $tpl->set_var('TITLE', isset($form['Title']) ? htmlspecialchars($form['Title']) : '');
     $tpl->set_var('DESCRIPTION', isset($form['Description']) ? htmlspecialchars($form['Description']) : '');
+    $tpl->set_var('KEYWORDS', isset($form['Keywords']) ? htmlspecialchars($form['Keywords']) : '');
     $tpl->set_var('PAGECODE', isset($form['PageCode']) ? htmlspecialchars($form['PageCode']) : '');
     $tpl->set_var('ARCH_CHECKED', (isset($form['arhiv']) && $form['arhiv'] == 1)? ' checked' : '');
     $tpl->set_var('HASAR_CHECKED', (isset($form['HasArticles']) && $form['HasArticles'] == 1)? ' checked' : '');

@@ -35,9 +35,12 @@
           <table border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
 <!-- Адрес клиента //-->  
-              <td align="left" valign="top" nowrap="" class="adr_txt">Наш
-                адрес:</td> <td class="adr_real">Москва, ул. Большая Новодмитровская,
-                д.14 стр. 3<br>тел.: (495) 727-7361</td> 
+              <td align="left" valign="top" nowrap="" class="adr_txt">
+                Наш адрес:
+              </td>
+              <td class="adr_real">
+                117218, Москва, Нахимовский проспект, 24, стр. 9<br>тел.: (495) 727-7361
+              </td> 
             </tr>
           </tbody></table>
           <table border="0" cellspacing="0" cellpadding="0">

@@ -4,6 +4,7 @@
 <tr><td>Описание:</td><td><textarea name=form[Coment] cols=55 rows=10 class="inp">{COMENT}</textarea></td></tr>
 <tr><td>Title:</td><td> <input name=form[Title] value="{TITLE}" class=inp style="width : 350px"></td></tr>
 <tr><td>Description:</td><td> <input name=form[Description] value="{DESCRIPTION}" class=inp style="width : 350px"></td></tr>
+<tr><td>Keywords:</td><td> <input name=form[Keywords] value="{KEYWORDS}" class=inp style="width : 350px"></td></tr>
 <tr><td>Код страницы:</td><td><input name=form[PageCode] value="{PAGECODE}" class=inp style="width : 350px"></td></tr>
 <tr><td>Неактивен:</td><td width="100%"><input type=checkbox name=form[archiv] {ARCH_CHECKED}></td></tr>
 <tr><td>Имеет статьи:</td><td width="100%"><input type=checkbox name=form[HasArticles] {HASAR_CHECKED}></td></tr>

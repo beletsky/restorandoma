@@ -2,7 +2,7 @@
                 <div class="month">
                     <div class="month_inner">
 <!-- BEGIN prev_month -->
-                        <a href="{PREV_MONTH_URL}"><img src="/images/ico_next_month.gif" alt="&lt;" width="11" height="11" ></a>
+                        <a href="{PREV_MONTH_URL}"><img src="/images/ico_prev_month.gif" alt="&lt;" width="11" height="11" ></a>
 <!-- END prev_month -->
                         {MONTH_NAME}
 <!-- BEGIN next_month -->

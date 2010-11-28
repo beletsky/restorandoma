@@ -17,6 +17,7 @@
     $tpl->set_file('main', PATH_TO_ROOT.'tpl/header.tpl');
     $tpl->set_var('TITLE',$PageTitle);
     $tpl->set_var('DESCRIPTION',$PageDescription);
+    $tpl->set_var('KEYWORDS',$PageKeywords);
     $tpl->pparse('C', 'main', false);
     unset($tpl);
 

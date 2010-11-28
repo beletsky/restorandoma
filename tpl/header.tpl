@@ -2,8 +2,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <title>{TITLE}</title>
-    <meta name="keywords" content="обеды в офис, доставка обедов, достака обедов в офис, доставка обедов Москва, доставка обедов в офис Москва, горячие обеды доставка, комплексные обеды, доставка комплексных обедов, обеды заказ доставка, горячие обеды в офис" />
     <meta name="description" content="{DESCRIPTION}" />
+    <meta name="keywords" content="{KEYWORDS}" />
     <link href="/main.css" rel="stylesheet" type="text/css" />
     
     <link rel="alternate" type="application/rss+xml" title='' href="rss.xml" />

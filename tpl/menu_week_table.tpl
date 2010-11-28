@@ -7,7 +7,7 @@
 <!-- BEGIN day -->
 <h2>{DATE_BLOCK}</h2>
         
-<table class="tblPersonal">
+<table class="tblPersonal" style="width:auto; clear:left;">
 <tr>
     <th width="10%" height="40" valign="top" class="first" nowrap>Вес</th>
     <th width="80%" height="40" valign="top" nowrap>Наименование</th>

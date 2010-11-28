@@ -24,6 +24,7 @@ global $g_options;
 #Параметры текущей страницы
 $PageTitle = '';
 $PageDescription = '';
+$PageKeywords = '';
 $PageMainTitle = '';
 $MainPageText = '';
 $MainPageText_bottom = '';
@@ -347,6 +348,7 @@ $PageArray = get_page_cont_by_id($PageCode);
 $MainPageText = isset($PageArray['TxtEditor']) ? $PageArray['TxtEditor'] : '';
 $PageTitle = isset($PageArray['Title']) ? $PageArray['Title'] : 'РесторанДома';
 $PageDescription = isset($PageArray['Description']) ? $PageArray['Description'] : 'РесторанДома';
+$PageKeywords = isset($PageArray['Keywords']) ? $PageArray['Keywords'] : '';
 
 if (isset($PageArray['PageType']) && $PageArray['PageType'] == 'din') {
     switch ($PageCode) {

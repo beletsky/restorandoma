@@ -33,6 +33,7 @@ function spage_edit($data,$isnew=true,$auto=false) {
         $q .= isset($data['TxtEditor']) ? 'txtEditor = "' . $data['TxtEditor'] .'", ' : '';
         $q .= isset($data['Title']) ? 'Title = "' . $data['Title'] .'", ' : '';
         $q .= isset($data['Description']) ? 'Description = "' . $data['Description'] .'", ' : '';
+        $q .= isset($data['Keywords']) ? 'Keywords = "' . $data['Keywords'] .'", ' : '';
         $q .= isset($data['PageCode']) ? 'PageCode = "' . $data['PageCode'] .'", ' : '';
         $q .= isset($data['PageType']) ? 'PageType = "' . $data['PageType'] .'", ' : '';
         $q .= isset($data['Navigation']) ? 'Navigation = "' . $data['Navigation'] .'", ' : '';
@@ -59,7 +60,7 @@ function spage_del($id) {
 function  get_all_stpages_IDCode() {
     global $db;
     $ret = array();
-    $q = 'select IDPage, Name, Title, Description, PageCode from dwStPages order by Name';
+    $q = 'select IDPage, Name, Title, Description, Keywords, PageCode from dwStPages order by Name';
     $db->query($q);
     while($tree_arr = $db->FetchArray()) { 
         $ret[$tree_arr['PageCode']] = $tree_arr['Name'];
@@ -71,7 +72,7 @@ function  get_all_stpages_IDCode() {
 function  get_stpages_with_articles_IDCode() {
     global $db;
     $ret = array();
-    $q = 'select IDPage, Name, Title, Description, PageCode from dwStPages where HasArticles=1 order by Name';
+    $q = 'select IDPage, Name, Title, Description, Keywords, PageCode from dwStPages where HasArticles=1 order by Name';
     $db->query($q);
     while($tree_arr = $db->FetchArray()) { 
         $ret[$tree_arr['PageCode']] = $tree_arr['Name'];
